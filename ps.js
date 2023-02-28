@@ -23,4 +23,10 @@ switch (num) {
 
 //wap is js to find whether a number is divisible bt 2 and 3
 
-let num=prompt("what is your num")
+let number = prompt("what is your num");
+number = Number.parseInt(number);
+if (number % 2 == 0 && number % 3 == 0) {
+  console.log("your num is divisbile by 2 n 3");
+} else {
+  console.log("not divsisible");
+}
