@@ -13,5 +13,6 @@ switch (a) {
 console.log(`The value is ${a}`);
 
 //ternary operator
-
-console.log("you can", a > 18 ? "not drive" : "drive");
+let age=12
+let b=age>18? "drive":"notdrive"
+ console.log(b)
