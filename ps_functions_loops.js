@@ -24,7 +24,7 @@ for(let key in marks){
 // console.log("you entered correct number.")
 
 // wap to find a mean using function
- const mean=(a,b,c,d)=>{
+ const mean = (a,b,c,d) => {
     return(a+b+c+d)/4
  }
  console.log(mean(4,5,6,7))
