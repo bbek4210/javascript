@@ -34,3 +34,29 @@ console.log(o)
 let d=[4,5,6,7,]
 delete d[0]
 console.log(d)
+
+//concat
+let f1=[1,2,3]
+let f2=[4,5,6]
+console.log(f1.concat(f2))
+
+//sort()
+let t=[7,9,8,,11,89,1001]
+console.log(t.sort())
+
+
+//reverse()
+let b=[4,5,6]
+console.log(b.reverse())
+
+
+//splice()
+let num=[1,2,3,4,5]
+num.splice(2,1,23,24)
+console.log(num)
+
+
+//slice()
+ const num1=[1,2,3,4,]
+ num1.slice(1,3)
+ console.log(num1)  //result will be [2,3]
