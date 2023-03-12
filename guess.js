@@ -3,7 +3,7 @@ let random = Math.floor(Math.random() * 100);
 let chances=0;
 let input;
 
-while (input != random){
+while (input!= random){
   input = Number.parseInt(prompt("Enter a Number between 0 to 100"));
   
   if(input != random){
