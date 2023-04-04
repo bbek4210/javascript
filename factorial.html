@@ -8,7 +8,8 @@
 </head>
 <body>
     <script>
-        let n=+prompt("enter the number")
+        let n=prompt("enter the number")
+        n=Number.parseInt(n)
         var factorial=n=>{
             if(n<1){
                 return("number is negative or zero")
