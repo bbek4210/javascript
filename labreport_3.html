@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var store = [];
+      do {
+        var n = prompt("enter any number and say no to stop ");
+
+        if (n == "no") {
+          console.log(store);
+          break;
+        } else {
+          store.push(+n);
+        }
+      } while (n != 0);
+      console.log(store);
+
+      var sum = 0;
+      for (var i = 0; i < store.length; i++) {
+        sum = sum + store[i];
+      }
+
+      var avg = sum / store.length;
+
+      //   console.log("The average is: " + avg);
+      document.write("the average of the stored array is  ", avg);
+    </script>
+  </body>
+</html>

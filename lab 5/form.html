@@ -1,0 +1,46 @@
+<!-- write a js code to validate user submittedx data username password and phone.
+(hint: name of the fields are blnak and password is at least 6 characters long and phone number contains 7 digits) -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>validation</title>
+  </head>
+  <body>
+    <form method="POST" action="" onsubmit="return validateform()" ;>
+      <label for="username">Username </label>
+      <input
+        type="username"
+        name="username"
+        id="username"
+        placeholder=" enter your Username"
+      />
+      <br />
+
+      <label for="password">Password</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder=" enter your Password"
+      />
+      <br />
+
+      <label for="phone">PhoneNumber</label>
+      <input
+        type="phone"
+        name="phone"
+        id="phone"
+        placeholder=" enter your PhoneNumber"
+      />
+      <br />
+
+      <label for="submit"></label>
+      <input type="submit" name="submit" id="submit" />
+    </form>
+    <script src="form.js"></script>
+  </body>
+</html>
