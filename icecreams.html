@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <div>
+        <label for="nambata">Full Name</label>
+        <input type="text" id="nambata" placeholder="enter name" />
+        <br />
+        <label
+          >choose the icecream flavour
+          <select id="iceCreams" name="iceCreams">
+            <option value="">choose one</option>
+
+            <option value="vanila">vanila</option>
+            <option value="chocolate">chocolate</option>
+          </select>
+        </label>
+        <br />
+        <div id="result"></div>
+      </div>
+    </div>
+
+    <script>
+      const iceCreams = document.getElementById("iceCreams");
+      iceCreams.addEventListener("change", () => {
+        const naam = document.getElementById("nambata").value;
+        const iceCreams = document.getElementById("iceCreams").value;
+        const result = document.getElementById("result");
+
+        result.innerHTML = `Mr${naam}  selects <br> ${iceCreams} icecream flavour.`;
+      });
+    </script>
+  </body>
+</html>
